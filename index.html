@@ -16,7 +16,9 @@
 
 
 <body>
-
+    <div class="blocSpinner">
+    <div class="lds-dual-ring"></div>
+    </div>
     <header>
         <h1>Ohmyfood</h1>
     </header>
@@ -60,9 +62,12 @@
 
     <section class="restaurants">
         <h3><strong>Restaurants</strong></h3>
+        
+        <div class="blocAllMenu"> 
 
+        <div class="blocMenu1_2">
         <article class="blocMenu">
-            <a href="#">
+            
             <img class="pictureMenu" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
 
             <section class="card__size">
@@ -76,11 +81,11 @@
                     <i class=" heartIconLike fas fa-heart"></i>
                 </div>
             </section>
-            </a>
+            
         </article>
 
         <article class="blocMenu marginBloc2_3_4">
-            <a href="#">
+            
             <img class="pictureMenu" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
 
             <section class="card__size">
@@ -94,10 +99,13 @@
                     <i class=" heartIconLike fas fa-heart"></i>
                 </div>
             </section>
-            </a>
+            
         </article>
 
-        <article class="blocMenu marginBloc2_3_4">
+        </div>
+
+        <div class="blocMenu3_4">
+        <article class="blocMenu ">
             <img class="pictureMenu" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
 
             <section class="card__size">
@@ -113,13 +121,35 @@
             </section>
         </article>
 
+        <article class="blocMenu marginBloc2_3_4">
+            <img class="pictureMenu" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+
+            <section class="card__size">
+                <div class="menu">
+                    <button class="sizeNew btnNew">Nouveau</button>
+                    <h4 class="sizeDish"><strong>A la française</strong></h4>
+                    <p class="sizeDish">Cité rouge</p>
+                </div>
+                <div class="like">
+                    <i class=" heartIcon far fa-heart"></i>
+                    <i class=" heartIconLike fas fa-heart"></i>
+                </div>
+            </section>
+        </article>
+        </div>
+        </div>
 
     </section>
 
-
-
-
-
+    <footer>
+        <img class="logo" src="./images/logo/ohmyfood.png" alt="logo ohmyfood"/>
+        <ul class="footerLink">
+            <li class="item"><span class="iconFooter fas fa-utensils"></span> <strong>Proposez un restaurant</strong> </li>
+            <li class="item"><span class="iconFooter fas fa-hands-helping"></span><strong>Devenir partenaire</strong> </li>
+            <li class="item"><strong>Mentions légales</strong> </li>
+            <li class="item textDecoNone"><a href="mailto:contact@ohmyfood.com"><strong>Contact</strong> </a></li>
+        </ul>
+    </footer>
 
 
 </body>
