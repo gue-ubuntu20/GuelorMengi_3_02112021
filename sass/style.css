@@ -1,4 +1,8 @@
 /* GLOBAL RULES */
+header {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
 body {
   font-family: Roboto;
   padding: 0;
@@ -26,47 +30,71 @@ h1 {
   display: inline-block;
   width: 80px;
   height: 80px;
-  background: transparent;
-  position: absolute;
+  /* background: transparent;*/
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-}
-
-.lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
   border-radius: 50%;
   border: 6px solid #9356DC;
   border-color: #9356DC transparent #9356DC transparent;
-  -webkit-animation: lds-dual-ring 1.2s linear infinite;
-  animation: lds-dual-ring 1.2s linear infinite;
+  -webkit-animation: lds-dual-ring 2s linear;
+  animation: lds-dual-ring 2s linear;
+  opacity: 0;
 }
 
 /* animation button */
 @-webkit-keyframes lds-dual-ring {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: rotate(0deg);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     transform: rotate(360deg);
   }
 }
 @keyframes lds-dual-ring {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: rotate(0deg);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     transform: rotate(360deg);
+  }
+}
+.loadingHomePage {
+  font-family: Roboto;
+  padding: 0;
+  margin: 0;
+  -webkit-animation: loadingHomePage 2.5s linear;
+          animation: loadingHomePage 2.5s linear;
+}
+
+@-webkit-keyframes loadingHomePage {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loadingHomePage {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /* HEADER */
@@ -198,7 +226,7 @@ article {
 }
 
 .blocMenu {
-  width: 100%;
+  width: 95%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
   background-color: white;
@@ -286,15 +314,15 @@ footer {
 @media (min-width: 400px) {
   body {
     width: auto;
-    margin: 10px;
+    margin: 15px;
   }
 
   .blocMenu {
-    width: 500px;
+    width: 450px;
   }
 
   .logo {
-    width: 30%;
+    width: 25%;
     filter: invert(100%);
   }
 }
