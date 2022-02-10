@@ -1,3 +1,187 @@
-body {
-    background: blue;
+/* GLOBAL RULES */
+
+header {
+    margin: 10px;
 }
+body {
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+$color-principal:#9356DC;
+$color-seconday:#FF79DA;
+$color-tertiary:#99E2D0;
+
+
+h1 {
+    font-family: Shrikhand, cursive;
+    margin: auto;
+}
+
+
+.fatText {
+    font-weight: bold;
+}
+
+/* ARROW */
+
+.arrow {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    color: #000;
+}
+/* introduction */
+
+
+.introduction {
+    background-color: whitesmoke;
+    position: relative;
+}
+.picture {
+    width: 100%;
+    position: relative;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-family: Shrikhand, cursive;
+    margin: 20px;
+}
+.nameRestaurant {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 30px 30px 0 0;
+    position: absolute;
+    bottom: 0;
+    }
+
+/* Setteing heart */
+
+.like {
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover > .heartIconLike{
+    color:$color-principal ;
+    opacity: 1;
+    transition: 1s;
+    } 
+}
+
+
+.heartIconLike {
+   position: absolute;
+   opacity: 0;
+    
+}
+
+/* Setting div starter dish */
+
+
+.titleStaterDish {
+    width: 90%;
+    margin: 0;
+}
+
+.starterDish {
+    margin: 0px 15px -30px 15px;
+    background-color: whitesmoke;
+    position: relative;
+ 
+}
+
+.underlineTitle {
+    border-bottom: 3px solid #99E2D0;
+    padding-bottom: 4px;
+}
+.btnStarterDish {
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px 0 gainsboro;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    
+
+    &:hover .box {
+        width: 70px;
+    }
+}
+/*  ANIMATION - BUTTON DISH  */
+
+.up {
+	animation: fadein 1s;
+}
+
+.down1 {
+	animation-delay: 50ms;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+.down2 {
+	animation-delay: 150ms;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+.down3 {
+	animation-delay: 300ms;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+
+.down4 {
+	animation-delay: 450ms;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+
+@keyframes fadein {
+    from {
+		transform: translateY(20px);
+        opacity:0;
+    }
+    to {
+		transform: translateY(0);
+        opacity:1;
+    }
+}
+
+.sizeTextMenu {
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
+    margin: 20px 0 0 10px;
+    
+
+}
+
+.box {
+    background: #99E2D0;
+    text-align: center;
+    overflow: hidden;
+    width: 0;
+    transition: width 1s;
+    padding: 30px;
+}
+.price {
+    font-weight: bold;
+    position: relative;
+}
+.checkMenu {
+    color: #101a17;
+    position: relative;
+    background-color: #fff;
+}
+
