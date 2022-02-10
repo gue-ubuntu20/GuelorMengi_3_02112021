@@ -24,6 +24,12 @@ h1 {
 .fatText {
     font-weight: bold;
 }
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
 
 /* ARROW */
 
@@ -105,6 +111,8 @@ h2 {
     padding-bottom: 4px;
 }
 .btnStarterDish {
+    display: flex;
+	justify-content: space-between;
     height: 70px;
     background-color: #fff;
     box-shadow: 0px 4px 10px 0 gainsboro;
@@ -117,6 +125,56 @@ h2 {
         width: 70px;
     }
 }
+
+
+
+/* BUTTON */
+
+.sizeTextMenu {
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
+    margin: 20px 0 0 10px;
+    
+
+}
+.ingredient {
+
+	font-weight: normal;
+
+}
+.price {
+    font-weight: bold;
+    position: relative;
+    padding: 24px 15px 0 15px;
+}
+
+.box {
+    background: $color-tertiary;
+    text-align: center;
+    overflow: hidden;
+    width: 0;
+    transition: width 1s;
+    padding-top: 30px;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+}
+
+.checkMenu {
+    color: #c2ceca;
+    position: relative;
+    background-color: rgb(107, 34, 34);
+    display: inline-block;
+    font-size: 25px;
+	transform: rotate(360deg);
+	transition: transform 500ms;
+    margin: auto;
+
+}
+
+
 /*  ANIMATION - BUTTON DISH  */
 
 .up {
@@ -156,32 +214,5 @@ h2 {
     }
 }
 
-.sizeTextMenu {
-    
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    flex-grow: 1;
-    margin: 20px 0 0 10px;
-    
 
-}
-
-.box {
-    background: #99E2D0;
-    text-align: center;
-    overflow: hidden;
-    width: 0;
-    transition: width 1s;
-    padding: 30px;
-}
-.price {
-    font-weight: bold;
-    position: relative;
-}
-.checkMenu {
-    color: #101a17;
-    position: relative;
-    background-color: #fff;
-}
 

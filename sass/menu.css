@@ -18,6 +18,18 @@ h1 {
   font-weight: bold;
 }
 
+.cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: whitesmoke;
+  padding-bottom: 40px;
+}
+
 /* ARROW */
 .arrow {
   position: absolute;
@@ -38,9 +50,15 @@ h1 {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h2 {
@@ -49,9 +67,14 @@ h2 {
 }
 
 .nameRestaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   background-color: whitesmoke;
   border-radius: 30px 30px 0 0;
@@ -65,9 +88,11 @@ h2 {
   position: relative;
   cursor: pointer;
 }
+
 .like:hover > .heartIconLike {
   color: #9356DC;
   opacity: 1;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -94,15 +119,73 @@ h2 {
 }
 
 .btnStarterDish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 70px;
   background-color: #fff;
-  box-shadow: 0px 4px 10px 0 gainsboro;
+  -webkit-box-shadow: 0px 4px 10px 0 gainsboro;
+          box-shadow: 0px 4px 10px 0 gainsboro;
   border-radius: 15px;
   margin-top: 20px;
   cursor: pointer;
 }
+
 .btnStarterDish:hover .box {
   width: 70px;
+}
+
+/* BUTTON */
+.sizeTextMenu {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 20px 0 0 10px;
+}
+
+.ingredient {
+  font-weight: normal;
+}
+
+.price {
+  font-weight: bold;
+  position: relative;
+  padding: 24px 15px 0 15px;
+}
+
+.box {
+  background: #99E2D0;
+  text-align: center;
+  overflow: hidden;
+  width: 0;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  padding-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 15px 15px 0;
+}
+
+.checkMenu {
+  color: #c2ceca;
+  position: relative;
+  background-color: #6b2222;
+  display: inline-block;
+  font-size: 25px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  margin: auto;
 }
 
 /*  ANIMATION - BUTTON DISH  */
@@ -145,49 +228,27 @@ h2 {
 
 @-webkit-keyframes fadein {
   from {
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes fadein {
   from {
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
-.sizeTextMenu {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex-grow: 1;
-  margin: 20px 0 0 10px;
-}
-
-.box {
-  background: #99E2D0;
-  text-align: center;
-  overflow: hidden;
-  width: 0;
-  transition: width 1s;
-  padding: 30px;
-}
-
-.price {
-  font-weight: bold;
-  position: relative;
-}
-
-.checkMenu {
-  color: #101a17;
-  position: relative;
-  background-color: #fff;
-}/*# sourceMappingURL=menu.css.map */
+/*# sourceMappingURL=menu.css.map */
