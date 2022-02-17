@@ -25,6 +25,10 @@ h1 {
 .fatText {
     font-weight: bold;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
 
 
 /* loading */
@@ -220,7 +224,6 @@ article {
 
 .restaurants {
     background: rgb(238, 238, 238);
-    padding: 10px;
     width: 100%;
 }
 
@@ -298,19 +301,19 @@ article {
 
 footer {
     position: relative;
-    padding: 20px;
     color: #ffffff;
     background-color: #2c2c2c;
     width: 100%;
 }
 .textFooter {
     font-size: 20px;
+    padding: 10px;
     color: #ffffff;
     font-family: Shrikhand;
 }
 
 .footerLink {
-    padding-left: 0;
+    padding: 0px 0 20px 10px;
     list-style-type: none;
     line-height: 25px;
     cursor: default;
