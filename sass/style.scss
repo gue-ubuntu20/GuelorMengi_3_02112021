@@ -1,8 +1,10 @@
 /* GLOBAL RULES */
 
+/*
 header {
     box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
-}
+}*/
+
 body {
     font-family: Roboto;
     padding: 0;
@@ -163,7 +165,7 @@ h2 {
 /* MAKING */
 
 .making {
-    padding: 20px;
+    padding-left: 10px;
     background: #FFF;
 }
 .choiceStep1 {
@@ -224,7 +226,7 @@ article {
 
 .restaurants {
     background: rgb(238, 238, 238);
-    width: 100%;
+    padding: 15px;
 }
 
 .sizeNew {
@@ -304,12 +306,13 @@ footer {
     color: #ffffff;
     background-color: #2c2c2c;
     width: 100%;
+    padding-top: 5px;
 }
 .textFooter {
     font-size: 20px;
-    padding: 10px;
     color: #ffffff;
     font-family: Shrikhand;
+    margin: 0px;
 }
 
 .footerLink {
@@ -317,6 +320,7 @@ footer {
     list-style-type: none;
     line-height: 25px;
     cursor: default;
+    margin: 0px;
 }
 .iconFooter {
     margin-right: 20px;
@@ -351,19 +355,24 @@ footer {
     body {
         margin: auto;
     }
-    .restaurants {
+
+    .making {
         width: 100%;
-    }
-    .blocAllMenu {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
        
-    
     }
     .blocMenu3_4 {
         margin-top: 0;
-        margin-left: 40px;
        
     }
     .logo {
@@ -372,7 +381,6 @@ footer {
     
     }
     
-}
 
 @media (min-width: 1380px) {
 
