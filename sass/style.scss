@@ -147,12 +147,12 @@ h2 {
     color: white;
     border-radius: 25px;
     border-top: 30px;
-    box-shadow: 0 2px 3px 0 rgb(17, 10, 16);
-    transition: color .3s;
+    box-shadow: 0 2px 3px 0 rgb(48, 33, 45);
+    transition-duration: 3s;
     
 
     &:hover {
-        background: rgb(222, 134, 241);
+        background: rgb(211, 105, 235);
         color: white;
         border: none;
         box-shadow: 0 2px 3px 0 rgb(205, 95, 209);
@@ -168,6 +168,14 @@ h2 {
     padding-left: 10px;
     background: #FFF;
 }
+
+.marginIcon {
+    margin: 20px;
+    color: grey;
+    transition-property: color;
+}
+
+
 .choiceStep1 {
   display: flex;
   align-items: center;
@@ -179,15 +187,14 @@ h2 {
   margin-bottom: 30px;
   position: relative;
 
-  &:hover {
-      background-color: rgb(208, 182, 214);
-      color: $color-principal;
-    
+  &:hover  {
+      background-color: rgb(241, 223, 245);
+      
+  }
+  &:hover > .appearance {
+    color: $color-principal;
   }
 
-}
-.marginIcon {
-    margin: 20px;
 }
 
 .flexCenter {

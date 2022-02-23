@@ -146,11 +146,11 @@ h2 {
   color: white;
   border-radius: 25px;
   border-top: 30px;
-  box-shadow: 0 2px 3px 0 #110a10;
-  transition: color 0.3s;
+  box-shadow: 0 2px 3px 0 #30212d;
+  transition-duration: 3s;
 }
 .btn:hover {
-  background: #de86f1;
+  background: #d369eb;
   color: white;
   border: none;
   box-shadow: 0 2px 3px 0 #cd5fd1;
@@ -160,6 +160,12 @@ h2 {
 .making {
   padding-left: 10px;
   background: #FFF;
+}
+
+.marginIcon {
+  margin: 20px;
+  color: grey;
+  transition-property: color;
 }
 
 .choiceStep1 {
@@ -174,12 +180,10 @@ h2 {
   position: relative;
 }
 .choiceStep1:hover {
-  background-color: #d0b6d6;
-  color: #9356DC;
+  background-color: #f1dff5;
 }
-
-.marginIcon {
-  margin: 20px;
+.choiceStep1:hover > .appearance {
+  color: #9356DC;
 }
 
 .flexCenter {
