@@ -1,9 +1,5 @@
 /* GLOBAL RULES */
 
-/*
-header {
-    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
-}*/
 
 body {
     font-family: Roboto;
@@ -148,16 +144,15 @@ h2 {
     border-radius: 25px;
     border-top: 30px;
     box-shadow: 0 2px 3px 0 rgb(48, 33, 45);
-    transition-duration: 3s;
+    transition-duration: 2s;
     
 
     &:hover {
-        background: rgb(211, 105, 235);
+        background: linear-gradient(#AD81DC, #FAB6E8);
         color: white;
         border: none;
-        box-shadow: 0 2px 3px 0 rgb(205, 95, 209);
+        box-shadow: 0 2px 3px 0 rgb(48, 33, 45);
           
-   
 }
 }
 
@@ -240,8 +235,7 @@ article {
     background: #99E2D0;
     color: #0c6b50;
     border-radius: 5px;
-    width: 100px;
-    height: 35px;
+    padding: 10px;
     border: none;
     text-align: center;
 }
@@ -287,7 +281,7 @@ article {
     cursor: pointer;
 
     &:hover > .heartIconLike{
-    color:$color-principal ;
+    
     opacity: 1;
     transition: 1s;
     } 
@@ -295,10 +289,14 @@ article {
 
 
 .heartIconLike {
-   position: absolute;
-   opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    opacity: 0;
     
 }
+
 .marginBloc2_3_4 {
     margin-top: 30px;
 }
